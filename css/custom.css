@@ -1,0 +1,375 @@
+/*
+    beIN CSS styles
+*/
+
+/* Hover */
+/* =========================== */
+a:hover, a:focus, a:active {
+    color: #5c2d91;
+}
+
+.header-nav {
+    width: 335px !important
+}
+
+.header-nav h3 {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.header-nav i {
+    color: #5c2d91;
+}
+
+.header-nav__close {
+    top: 24px !important;
+}
+
+.menu-is-open .header-nav .header-nav__content {
+    margin-top: 35px;
+}
+
+/* ===================================================================
+ * # home
+ *
+ * ------------------------------------------------------------------- */
+
+.home-content h1 {
+    font-family: Arial Black, sans-serif !important;
+    font-size: 56px !important;
+}
+
+.home-content h1 + p::before {
+    background-color: #fff !important;
+}
+
+@media only screen and (max-width: 756px) {
+    .home-content h1 {
+        font-family: Arial Black, sans-serif !important;
+        font-size: 4.5rem !important;
+    }
+}
+
+
+ .s-home {
+    width: 100%;
+    height: 100%;
+    min-height: 786px;
+    /* background-color: transparent; */
+    position: relative;
+    display: table;
+  }
+  /* .s-home .shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: linear-gradient(to right,#5e318e 0%, #5c2d91 20%, transparent 100%);
+  } */
+  
+  /* 
+  gradient start #5e318e 
+  
+  gradient end #32004b
+  
+  */
+  
+  /* .s-home::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+    background-color: #5c2d91;
+  } */
+  
+  /* .no-js .s-home {
+    background: #5e318e;
+  } */
+
+  .bold {
+      font-weight: bold;
+  }
+
+/* leagues */
+
+.card-container .card-img-top {
+    padding: 10px !important;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.card-title {
+    margin-top: 2px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+}
+
+/* .card-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+} */
+
+.card-container {
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card {
+    border: none; 
+}
+
+span.highlight {
+    font-weight: bold;
+    /* font-size: 24px; */
+}
+
+.subhead {
+    font-weight: bolder;
+}
+
+/* ==========================
+BACKGROUND IMAGE */
+
+/* .s-home::before {
+    background-color: none;
+} */
+
+/* Navigation Links */
+.home-sidelinks li {
+    background-color: rgba(60, 24, 90, 0.8) !important;
+}
+
+.home-content h1 + p {
+    color: rgba(255, 255, 255) !important;
+}
+
+.home-sidelinks a {
+    font-weight: bold !important;
+}
+
+#home {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* ---------- carousel -------- */
+
+.carousel {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*hide carousel on mobile */
+@media only screen and (max-width: 400px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+    #home {
+        background-image: url('../images/background.jpg');
+    }
+}
+
+
+/*---------------
+PINNING GRAPHICS 
+*/
+
+.triangle-bottom-left {
+    position: absolute;
+    bottom: 0px;
+}
+
+.triangle-top-left {
+    position: absolute;
+    top: 0px;
+}
+
+.triangle-top-right {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+.triangle-bottom-right {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.x-bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.grey-top-right {
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+}
+
+.grey-bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+}
+
+img#bottomRight {
+    position: absolute;
+    bottom: -2%;
+    right: 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .triangle-bottom-left img, .triangle-top-left img {
+       width: 100px;
+       height: 100px;
+    }
+    
+}
+
+/* ==========================
+PROVIDERS - WHERE TO FIND US 
+*/
+
+.provider-section {
+    padding: 20px;
+}
+
+.s-providers .card {
+    background: none;
+    height: 100%;
+    display: flex;
+}
+
+.badge-secondary {
+    font-style: italic;
+    margin-top: -8%;
+    margin-left: 8%;
+    background-color: #5e318e;
+}
+
+.p20 {
+    padding: 20px; 
+}
+
+.vert-center {
+    margin: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .provider-section {
+        padding: 10px;
+        margin: 10px; 
+    }
+    .triangle-bottom-left, .triangle-top-left {
+        max-width: 20%;
+    }
+    .badge-secondary {
+        margin-top: -2%;
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .provider-img img{
+        width: 100%;
+        padding: 10px;
+    }
+    .triangle-bottom-left, .triangle-top-left, .triangle-top-right, .triangle-bottom-right {
+        display: none;
+    }
+    .badge-secondary {
+        margin-top: -20px;
+        margin-left: 10%;
+    }
+
+}
+
+.coming-soon {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #5e318e;
+}
+
+/* EPG TABLE 
+=============================================
+*/
+
+#epg {
+    min-height: 750px;
+    width: 100%;
+}
+
+#schedule {
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.table-responsive {
+    max-height: 600px;
+}
+
+table.table-fit {
+    width: auto !important;
+    table-layout: auto !important;
+}
+table.table-fit thead th, table.table-fit tfoot th {
+    width: auto !important;
+}
+table.table-fit tbody td, table.table-fit tfoot td {
+    /* width: auto !important; */
+    white-space: nowrap !important;
+    width: 1%;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #5e318e;
+}
+
+
+.center-btn {
+    text-align: center;
+    padding-top: 20px !important;
+}
+
+button.epg-button.btn.center.btn-lg {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #5e318e;
+    border: 0.2rem solid #5e318e;
+}
+
+button.epg-button:active,
+button.epg-button:hover {
+    background-color: #5e318ec4 !important;
+    border: 0.2rem solid #5e318ec4 !important;
+}
